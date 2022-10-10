@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+/* PInput search */
+.container-dua{
+    position: fixed;
+    width: 60%;
+    height: 20px;
+    top: 45px;
+    z-index: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-dua input {
+    position: absolute;
+    width: 60vw;
+    padding: 7px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    z-index: 2;
+    font-family: georgia;
+}
+
+.container-dua button.search{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 5px;
+    cursor: pointer;
+    opacity: 1;
+    z-index: 3;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    transform: rotate(160deg);
+    transition: all 1s;
+}
+
+.container-dua button img{
+    width: 29.5px;
+    height: 29.5px;
+    background-color: transparent;
+}
+/* End Input Search */
+
+
+

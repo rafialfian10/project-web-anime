@@ -1,0 +1,208 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: #ddd;
+    overflow-x: hidden;
+}
+
+.container-satu {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(151, 242, 242);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+
+div.title {
+    width: 30%;
+    height: 100%;
+    margin-left: 70px;
+}
+
+.title h3 {
+    height: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: georgia;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li:hover{
+    opacity: 0.5;
+    background-color: rgb(0, 255, 255);
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+}
+
+
+
+/* menu toggle */
+.toggle {
+    margin-left: 20px;
+    width: 23px;
+    height: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+
+div.toggle span {
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    transition: all 0.5s;
+    border-radius: 30px;
+}
+
+.toggle input {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    opacity: 0;
+    left: -10px;
+    z-index: 2;
+}
+
+.toggle span:nth-child(2){
+    transform-origin: 0% 0%;
+}
+
+.toggle span:nth-child(4){
+    transform-origin: 0% 100%;
+}
+
+.toggle input:checked ~ span:nth-child(2){
+   transform: rotate(45deg) scaleY(1)
+}
+
+
+.toggle input:checked ~ span:nth-child(3){
+    transform: scale(0);
+    opacity: 0;
+}
+
+.toggle input:checked ~ span:nth-child(4){
+   transform: rotate(-45deg) scaleY(1)
+}
+
+.slider {
+    transform: translateX(0%);
+    opacity: 1;
+}
+/* End Toggle */
+
+
+/* --------------------------------------- */
+
+/* Screen Tablet */
+@media screen and (max-width: 768px){
+/* Navbar */
+    div.title {
+        width: 20%;
+    }
+
+    nav {
+        width: 60%;
+    }
+}
+/* End Navbar */
+
+
+/* Screen Mobile */
+@media screen and (max-width: 576px){
+/* Navbar */
+    div h3 {
+        margin-left: 30px;
+    }
+
+    nav ul {
+        width: 40%;
+        display: flex;
+        height: 100vh;
+        top: 40px;
+        bottom: 0;
+        left: 0;
+        background-color: rgb(94, 240, 2420);
+        flex-direction: column;
+        position: absolute;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        transition: all 1s;
+        opacity: 1;
+        transform: translateX(-100%);
+    }
+
+    nav ul li {
+        width: 100%;
+        height: 10%;   
+    }
+ /* End Navbar */
+
+
+/* Toggle */
+    div.toggle {
+        display: flex;
+    }
+
+    div.container-dua{
+        position: fixed;
+        top: 48px;
+        z-index: 1;
+    }
+}
+/* End Toggle */
+
+
+/* insert */
+a.insert{
+    position: fixed;
+    top: 50px;
+    left: 20px;
+}

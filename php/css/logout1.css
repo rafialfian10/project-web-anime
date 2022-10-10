@@ -1,0 +1,180 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+/* Logout */
+.navLogout{
+    position: fixed;
+    width: 500px;
+    height: 300px;
+    top: 220px;
+    z-index: 5;
+    background-color: white;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    transition: all 0.5s;
+    transform: scale(0);
+    transform-origin: 100% 0%;
+}
+
+div h2 {
+   width: 100%;
+   margin: auto;
+   text-align: center;
+   font-size: 30px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   color: black;
+}
+
+div.pilihan{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pilihan div {
+    width: 65px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+div.x {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: -10px;
+    top: -10px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px 0px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+div.navLogout div img{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+}
+
+.pilihan div a{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    width: 120%;
+    height: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+        /* scale logout */
+        .kecil{
+            transform: scale(0);
+        }
+
+        .besar{
+            transform: scale(1);
+        }
+/* End Logout */
+
+
+/* screen tablet */
+@media screen and (max-width: 768px){
+    /* Notif Logout */
+    div.navLogout{
+        width: 400px;
+        height: 250px;
+        transform-origin: 100% 0%;
+        top: 220px;
+    }
+
+    div.navLogout h2 {
+        font-size: 22px;
+    }
+
+    div.navLogout div.pilihan {
+        width: 40%;
+    }
+
+    div.navLogout div.pilihan div {
+        width: 60px;
+        height: 35px;
+        font-size: 15px;       
+    }
+
+    div.navLogout div.x {
+        width: 30px;
+        height: 30px;
+    }
+
+    div.navLogout div.x img{
+        width: 30px;
+        height: 30px;
+    }
+}
+/* End Notif Nogout */
+
+
+
+/* screen mobile */
+@media screen and (max-width: 576px){
+/* Notif Logout */
+     div.navLogout{
+        transform-origin: 100% 0%;
+        width: 200px;
+        height: 130px;
+        top: 220px;
+    }
+
+    div.navLogout h2 {
+        font-size: 16px;
+    }
+
+    div.navLogout div.pilihan {
+        width: 60%;
+    }
+
+    div.navLogout div.pilihan div {
+        width: 50px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    div.navLogout div.x {
+        width: 25px;
+        height: 25px;
+    }
+
+    div.navLogout div.x img{
+        width: 25px;
+        height: 25px;
+    }
+} 
+
+/* End Notif Logout */
+

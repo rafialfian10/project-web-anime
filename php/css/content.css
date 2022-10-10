@@ -1,0 +1,52 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container-tiga{
+    width: 80%;
+    margin: 120px auto;
+    list-style: none;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, minmax(200px, 1fr) );
+}
+
+.container-tiga img {
+    display: block;
+    width: 100%;
+    height: 300px;
+}
+
+.container-tiga a:hover {
+    cursor: pointer;
+}
+
+
+
+/* Tablet */
+@media screen and (max-width:768px){
+    .container-tiga {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .container-tiga img {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+
+
+/* Mobile */
+@media screen and (max-width:576px){
+    .container-tiga {
+        width: 70%;
+        grid-template-columns: 1fr;
+    }
+
+    .container-tiga img {
+        width: 100%;
+        height: 300px;
+    }
+}

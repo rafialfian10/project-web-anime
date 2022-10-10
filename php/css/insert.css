@@ -1,0 +1,69 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #ddd;
+    text-align: center;
+}
+
+h2{
+    margin: 30px auto;
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 60%;
+    height: 500px;
+    margin: 5px auto;
+    display: grid;
+    justify-items: center;
+    align-content: space-around;
+    grid-template-columns:repeat(1, minmax(200px, 1fr) );
+    background-color: transparent;
+}
+
+.container input {
+    width: 400px;
+    height: 25px;
+    padding: 3px;
+    padding-left: 15px;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: transparent;
+    transition: all 0.5s;
+}
+
+input.gambar {
+    position: relative;
+    left: -15px;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+
+
+button {
+    height: 40px;
+    width: 100px;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.container button:hover {
+    opacity: 0.5;
+    background-color: rgb(194, 194, 194);
+}
+
+@media screen and (max-width: 576px) {
+    div.container input {
+        width: 200px;
+    }
+}
